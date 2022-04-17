@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Apache Jena Fuseki</title>
+    <title>Apache Jena Fuseki - services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -39,12 +39,10 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html"><i class="fa fa-home"></i></a></li>
+              <li class=""><a href="index.html"><i class="fa fa-home"></i></a></li>
               <li class=""><a href="dataset.html"><i class="fa fa-database"></i> dataset</a></li>
               <li class=""><a href="manage.html"><i class="fa fa-cogs"></i> manage datasets</a></li>
-              <!-- JENA-887 not yet implemented
-              <li class=""><a href="services.html"><i class="fa fa-wrench"></i> services</a></li>
-              -->
+              <li class="active"><a href="services.html"><i class="fa fa-wrench"></i> services</a></li>
               <li class=""><a href="documentation.html"><i class="fa fa-info-circle"></i> help</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -63,38 +61,15 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center">Apache Jena Fuseki</h1>
-          <div class="text-muted text-center">
-            <small class='host-details'></small>
-          </div>
-        </div>
-      </div>
 
-      <div class="row current-datasets">
+      <div class="row">
         <div class="col-md-12">
           <h2>
-            Datasets on this server
+            Inspect dataset
           </h2>
-          <div id="dataset-selection-list"></div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="bg-info col-md-12">
-          <p><i class="fa fa-info-circle"></i> Use the following pages to perform actions or tasks on this server:</p>
-          <dl class="dl-horizontal">
-            <dt><a href="dataset.html">Dataset</a></dt>
-            <dd>Run queries and modify datasets hosted by this server.</dd>
-            <dt><a href="manage.html">Manage datasets</a></dt>
-            <dd>Administer the datasets on this server, including adding datasets,
-                uploading data and performing backups. </dd>
-            <dt><a href="documentation.html">Help</a></dt>
-            <dd>Summary of commands and links to online documentation.</dd>
-          </dl>
-        </div>
-      </div>
     </div>
 
   </body>
